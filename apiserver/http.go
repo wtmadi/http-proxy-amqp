@@ -42,7 +42,7 @@ func InitServer(pool *pool.ConnPool) *http.Server {
 		// }
 
 		if len(routingKey) == 0 {
-			fmt.Fprint(res, "exchange param empty")
+			fmt.Fprint(res, "routingKey param empty")
 			return
 		}
 
