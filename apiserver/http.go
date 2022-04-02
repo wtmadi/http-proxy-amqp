@@ -36,10 +36,10 @@ func InitServer(pool *pool.ConnPool) *http.Server {
 		exchange := strings.TrimSpace(req.URL.Query().Get("exchange"))
 		routingKey := strings.TrimSpace(req.URL.Query().Get("routingKey"))
 
-		if len(exchange) == 0 {
-			fmt.Fprint(res, "exchange param empty")
-			return
-		}
+		// if len(exchange) == 0 {
+			// fmt.Fprint(res, "exchange param empty")
+			// return
+		// }
 
 		if len(routingKey) == 0 {
 			fmt.Fprint(res, "exchange param empty")
