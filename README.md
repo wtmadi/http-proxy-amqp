@@ -72,3 +72,6 @@ _path_to_config_file.json_
 ## [Example]
 `curl -XPOST 'http://127.0.0.1:35673/confirm_send?exchange={xx}&routingKey={xx}' -d 'msg'`<br/>
 `OK`
+
+## [Fork Updates]
+`exchange` param is no longer mandatory, default exchange `''` will be used.
